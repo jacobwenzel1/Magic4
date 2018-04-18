@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+/**
+ * Write a description of class Driver here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Driver
+{
+    public static void main(String [] args)throws IOException{
+        int options;
+        Scanner input = new Scanner(System.in);
+        String [] choices;
+        System.out.println("Please enter the number of option you would like to use");
+        options = input.nextInt();
+        choices = new String [options];
+        for(int i = 0; i < choices.length; i++){
+            System.out.println("Enter term " + (i+1));
+            choices[i] = input.nextLine();
+        }
+        System.out.println("Here are all the choices you have entered");
+        for(int i = 0; i < choices.length; i++){
+            System.out.println(choices[i]);
+        }
+        
+    }
+}
